@@ -1,10 +1,9 @@
-package oop1;
+package aggregation;
 
 public class Car {
 	public String name;
 	public String color;
 	public int size;
-	private Car car;
 
 	// 생성자.(constructor)
 	public Car() {
@@ -18,15 +17,7 @@ public class Car {
 		this.color = color;
 		this.size = size;
 	}
-	
-	@Override
-	public String toString() {
-		return "Car [name=" + name + ", color=" + color + ", size=" + size + "]";
-	}
 
-	public void setCar(Car car) {
-		this.car = car;
-	}
 	public void go() {
 		System.out.printf("%s, %s Go Car...", this.name, this.color);
 	}
@@ -34,11 +25,5 @@ public class Car {
 	public void stop() {
 		System.out.printf("%s, %s Go Car...", this.name, this.color);
 
-	}
-	public void drive() {
-		car.go();
-	}
-	public void stopCar() {
-		car.stop();
 	}
 }
