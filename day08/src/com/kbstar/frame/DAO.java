@@ -1,5 +1,7 @@
 package com.kbstar.frame;
 
+import com.kbstar.dto.ItemDTO;
+
 public interface DAO<K,V> {
 	String IP = "127.0.0.1";
 	
@@ -12,5 +14,9 @@ public interface DAO<K,V> {
 	}
 	default void close() {
 		System.out.println(IP+"에 접속을 해제 하였습니다.");
+	}
+	public static ItemDTO select(int id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

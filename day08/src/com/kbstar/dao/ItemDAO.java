@@ -1,5 +1,7 @@
 package com.kbstar.dao;
 
+import java.util.List;
+
 import com.kbstar.dto.ItemDTO;
 import com.kbstar.frame.DAO;
 
@@ -9,7 +11,6 @@ public class ItemDAO implements DAO<Integer,ItemDTO> {
 	public void insert(ItemDTO v) {
 		System.out.println(v);
 		System.out.println("Inserted...");
-		
 	}
 
 	@Override
@@ -21,7 +22,11 @@ public class ItemDAO implements DAO<Integer,ItemDTO> {
 	@Override
 	public void update(ItemDTO v) {
 		// TODO Auto-generated method stub
-		
+	}
+
+	public static List<ItemDTO> select(int i) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
