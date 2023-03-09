@@ -13,7 +13,7 @@ public class ItemDTO {
 		this.name = name;
 		this.price = price;
 		this.qt = qt;
-	}
+	} 
 	public int getId() {
 		return id;
 	}
