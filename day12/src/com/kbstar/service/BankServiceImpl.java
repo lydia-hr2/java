@@ -108,6 +108,13 @@ public class BankServiceImpl implements BankService<UserDTO, AccountDTO, Transac
 
 	@Override
 	public List<AccountDTO> getAllAccount(String k) throws Exception {
+		List<AccountDTO> list = null;
+		list = accountDao.search(k);
+		return list;
+	}
+
+	@Override
+	public List<TransactionDTO> getAllTr(String accNo) {
 		// TODO Auto-generated method stub
 		return null;
 	}

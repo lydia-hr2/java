@@ -2,6 +2,8 @@ package com.kbstar.frame;
 
 import java.util.List;
 
+import com.kbstar.dto.TransactionDTO;
+
 /**
  * 23.3.10
  * @author hyerim shin
@@ -23,5 +25,6 @@ public interface BankService<V1, V2, V3, K, P> {
 	public List<V3> getAllTr() throws Exception;
 	public void transaction(String sendAcc, 
 			String receiveAcc, double balance, String desc) throws Exception;
+	public List<TransactionDTO> getAllTr(String accNo);
 
 }
