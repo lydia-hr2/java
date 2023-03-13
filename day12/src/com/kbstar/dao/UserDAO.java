@@ -9,7 +9,6 @@ import com.kbstar.dto.UserDTO;
 import com.kbstar.frame.DAO;
 
 public class UserDAO implements DAO<String, UserDTO>{
-
 	HashMap<String, UserDTO> db;
 	
 	public UserDAO() {
