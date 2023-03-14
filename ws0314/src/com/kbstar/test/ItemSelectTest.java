@@ -10,7 +10,7 @@ public class ItemSelectTest {
 		CRUDService<String, Item> itemService = new ItemCRUDServiceImpl();
 
 		try {
-			item = itemService.get("2023314864100");
+			item = itemService.get("202331484100");
 			System.out.println(item);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

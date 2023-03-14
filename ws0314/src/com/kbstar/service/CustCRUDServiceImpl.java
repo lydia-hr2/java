@@ -1,10 +1,5 @@
 package com.kbstar.service;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.SQLRecoverableException;
 import java.util.List;
@@ -97,6 +92,12 @@ public class CustCRUDServiceImpl implements CRUDService<String, Cust>{
 		}
 		
 		return list;
+	}
+
+	@Override
+	public List<Cust> getUserSelection(String k) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
