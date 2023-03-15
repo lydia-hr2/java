@@ -34,7 +34,7 @@ _실행 결과: 해당 이미지로 확인 가능합니다._
 ***
 
 __4조 GIT 연동 주소입니다__
-1. [4조 유성진](https://github.com/Yooseoungjin)
-2. [4조 박선미](https://github.com/psm2360440)
-3. [4조 이나은](https://github.com/naaaaeun)
-4. [4조 신혜림](https://github.com/hayleys9525)
+1. [4조 유성진](https://github.com/Yooseoungjin/java/tree/assignment/final_ws0315)
+2. [4조 박선미](https://github.com/psm2360440/java/tree/assignment/final_ws0315)
+3. [4조 이나은](https://github.com/naaaaeun/java/tree/assignment/final_ws0315)
+4. [4조 신혜림](https://github.com/hayleys9525/java/tree/assignment/final_ws0315)
