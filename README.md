@@ -5,7 +5,7 @@
 __A. 테이블 설계 및 구축__
    1. Table 1의 명칭 : account
    2. Table 2의 명칭 : tr
-   3. Table 3의 명칭 : user 
+   3. Table 3의 명칭 : cust
 ***
 
 __B. 개발 환경 구축__
