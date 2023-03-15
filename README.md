@@ -29,10 +29,10 @@ _UML: 해당 이미지로 확인 가능합니다._
 ***
 ***
 
-_실행 결과: 해당 이미지로 확인 가능합니다._
-<img width="500" alt="결과1" src="https://github.com/hayleys9525/java/blob/assignment/final_ws0315/%EA%B2%B0%EA%B3%BC1.PNG">
-<img width="500" alt="결과2" src="https://github.com/hayleys9525/java/blob/assignment/final_ws0315/%EA%B2%B0%EA%B3%BC2.PNG">
 
+<img width="700" alt="결과1" src="https://github.com/hayleys9525/java/blob/assignment/final_ws0315/%EA%B2%B0%EA%B3%BC1.PNG">
+<img width="700" alt="결과2" src="https://github.com/hayleys9525/java/blob/assignment/final_ws0315/%EA%B2%B0%EA%B3%BC2.PNG">
+_실행 결과: 해당 이미지로 확인 가능합니다._
 
 ***
 
