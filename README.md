@@ -1,5 +1,5 @@
-<img width="500" alt="불사조" src="https://github.com/hayleys9525/java/blob/assignment/final_ws0315/logo.png">
-# FINAL JAVA PROJECT(Banking Application) BY TEAM 4   
+<img width="200" alt="불사조" src="https://github.com/hayleys9525/java/blob/assignment/final_ws0315/logo.png">
+#__FINAL JAVA PROJECT(Banking Application) BY TEAM 4__   
 # Project Name: final_ws0315
 ## 각 팀원의 assignment 브랜치에 개별적으로 제출하였습니다!
 
