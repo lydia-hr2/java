@@ -15,11 +15,11 @@
 
 ***
 
-1.## first    
+1.##first    
     1. first
     2. second
-3.## second
-4.## third
+3.##second
+4.##third
 
 *single asterisks*
 _single underscores_
@@ -43,7 +43,7 @@ __double underscores__
 </pre>
 
 
-[Google에 접속 할 수 있습니다.](https://google.com, "google link")
+[Google에 접속 할 수 있습니다.](https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwiE_frM9Nz9AhXagFYBHeteAaEQPAgI, "google link")
 
 
 
