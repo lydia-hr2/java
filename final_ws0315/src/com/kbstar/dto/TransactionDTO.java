@@ -11,9 +11,6 @@ public class TransactionDTO {
 	private Double balance; // 거래 후 잔액
 	private Date regdate; // 거래 일자.
 
-	public TransactionDTO() {
-	}
-
 	public TransactionDTO(String myAcc,String opositAcc, String type, Double amount) {
 		this.opositAcc = opositAcc;
 		this.type = type;

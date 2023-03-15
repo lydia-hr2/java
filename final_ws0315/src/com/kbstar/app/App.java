@@ -17,7 +17,7 @@ public class App {
 
 		Scanner sc = new Scanner(System.in);
 		while (true) {
-			System.out.println("Login(l) or Register(r) (q)...");
+			System.out.println("Login(l) or Rehister(r) (q)...");
 			String cmd = sc.next();
 			if (cmd.equals("q")) {
 				break;
@@ -30,7 +30,7 @@ public class App {
 				CustDTO user = new CustDTO(id, pwd, name, contact); // 에 입력된 유저객체 저장
 				try {
 					service.register(user);
-					System.out.println("가입을 환영합니다.");
+					System.out.println("가입을 환입합니다.");
 				} catch (Exception e) {
 					System.out.println(e.getMessage());
 				}

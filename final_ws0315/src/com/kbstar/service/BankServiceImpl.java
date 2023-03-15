@@ -14,15 +14,16 @@ import com.kbstar.frame.MakeAccountNumber;
 import com.kbstar.frame.Notification;
 import com.kbstar.noti.NotificationImpl;
 
+
 public class BankServiceImpl implements BankService<CustDTO, AccountDTO, TransactionDTO, String, String> {
 
-	DAO<String, CustDTO> custDao;
+	DAO<String, CustDTO> userDao;
 	DAO<String, AccountDTO> accountDao;
 	DAO<String, TransactionDTO> TransactionDao;
 	Notification notification;
 
 	public BankServiceImpl() {
-		custDao = new CustDAO();
+		userDao = new CustDAO();
 		accountDao = new AccountDAO();
 		notification = new NotificationImpl();
 		TransactionDao = new TransactionDAO();
@@ -31,25 +32,25 @@ public class BankServiceImpl implements BankService<CustDTO, AccountDTO, Transac
 	@Override
 	public void register(CustDTO v) throws Exception {
 		try {
-			custDao.insert(v);
+			userDao.insert(v);
 		} catch (Exception e) {
 			throw new Exception("등록오류");
 		}
-		notification.sendSMS(v.getContact(), "축하합니다...");
+		notification.sendSMS(v.getContact(), "진심으로 축하합니다...");
 	}
 
 	@Override
 	public CustDTO login(String k, String p) throws Exception {
 		CustDTO user = null;
-		user = custDao.select(k);
+		user = userDao.select(k);
 		if (user != null) {
 			if (user.getPwd().equals(p)) {
-				System.out.println("로그인 되었습니다");
+				System.out.println("로그인 되었슈~");
 			} else {
-				throw new Exception("비밀번호 확인해 보세요");
+				throw new Exception("비번확인해 봐유~");
 			}
 		} else {
-			throw new Exception("없는 아이디입니다");
+			throw new Exception("없는 아이디에유~");
 		}
 		return user;
 	}
@@ -57,7 +58,7 @@ public class BankServiceImpl implements BankService<CustDTO, AccountDTO, Transac
 	@Override
 	public CustDTO getUserInfo(String k) throws Exception {
 		CustDTO user = null;
-		user = custDao.select(k);
+		user = userDao.select(k);
 		return user;
 	}
 
@@ -66,7 +67,7 @@ public class BankServiceImpl implements BankService<CustDTO, AccountDTO, Transac
 		String accNo = MakeAccountNumber.makeAccNum();
 		AccountDTO account = new AccountDTO(accNo, balance, k);
 		accountDao.insert(account);
-		CustDTO user = custDao.select(k);
+		CustDTO user = userDao.select(k);
 		notification.sendSMS(user.getContact(), accNo + "계좌를 생성 하였습니다.");
 	}
 
@@ -85,14 +86,15 @@ public class BankServiceImpl implements BankService<CustDTO, AccountDTO, Transac
 		double abalance = acc.getBalance() - balance;
 		acc.setBalance(abalance); // 송금후 잔액인 abalance를 계좌정보에 넣어라
 		accountDao.update(acc);
+
 		// 거래 내역 추가
-		TransactionDTO tr = new TransactionDTO();
+		TransactionDTO tr = new TransactionDTO(sendAcc, receiveAcc, desc, null);
 		TransactionDao.insert(tr);
 		System.out.println();
 
 		// sms 전송
 		String uid = acc.getHolder_id();
-		CustDTO u = custDao.select(uid);
+		CustDTO u = userDao.select(uid);
 		notification.sendSMS(u.getContact(),
 				acc.getAccNo() + " 에서 " + balance + " 출금 되었다. " + " 이체 후 잔액은 " + acc.getBalance());
 		// 완료
