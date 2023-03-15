@@ -22,7 +22,7 @@ __D. 주요 변경 사항__
 ***
 
 _UML: 해당 이미지로 확인 가능합니다._
-<img width="500" alt="스크린샷 2022-03-27 오전 12 41 14" src="https://github.com/leejeani/javaws/blob/main/ws0306/0309.png">
+<img width="500" alt="스크린샷 2022-03-27 오전 12 41 14" src="https://github.com/hayleys9525/java/blob/assignment/final_ws0315/src/0315UML.jpg">
 
 ***
 ***
