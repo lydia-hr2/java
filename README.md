@@ -1,3 +1,4 @@
+<img width="500" alt="불사조" src="https://github.com/hayleys9525/java/blob/assignment/final_ws0315/logo.png">
 # FINAL JAVA PROJECT(Banking Application) BY TEAM 4   
 # Project Name: final_ws0315
 ## 각 팀원의 assignment 브랜치에 개별적으로 제출하였습니다!
@@ -22,7 +23,7 @@ __D. 주요 변경 사항__
 ***
 
 _UML: 해당 이미지로 확인 가능합니다._
-<img width="500" alt="스크린샷 2022-03-27 오전 12 41 14" src="https://github.com/hayleys9525/java/blob/assignment/final_ws0315/src/0315UML.jpg">
+<img width="500" alt="이미지" src="https://github.com/hayleys9525/java/blob/assignment/final_ws0315/0315UMLFINAL.jpg">
 
 ***
 ***
